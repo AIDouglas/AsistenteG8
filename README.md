@@ -168,7 +168,7 @@ El botón activo se marca con color azul y tipografía en negrita.
 
 ## Roadmap futuro
 
-Este prototipo puede extenderse fácilmente:
+Lo que hay pendiente es:
 
 -   Conectar a un **backend (API REST)** para reportes y trámites
     reales.
@@ -181,6 +181,6 @@ Este prototipo puede extenderse fácilmente:
 
 ## Autores
 
-Proyecto creado como prototipo de aplicación ciudadana con React +
+Proyecto creado como prototipo de aplicación asesor ciudadano con React +
 Tailwind.\
-Se puede usar como base para desarrollos más completos.
+Será la  base para desarrollo en siguientes entregas.
