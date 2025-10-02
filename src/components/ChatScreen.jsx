@@ -87,7 +87,7 @@ export default function ChatScreen({ onNavigate }) {
 
       {/* Nota para integraciones reales */}
       <div className="mt-3 text-xs text-gray-500">
-        Integración: aquí conectarás el cliente con el backend/servicio de IA (ej. API a modelo de lenguaje). Cada respuesta deberá incluir fuente, nivel de confianza y opción para pedir derivación humana en casos sensibles.
+        Integración: Cada respuesta deberá incluir fuente, nivel de confianza y opción para pedir derivación humana en casos sensibles.
       </div>
 
       <div className="mt-4 flex justify-between">
