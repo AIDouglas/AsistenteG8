@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import ScreenShell from './components/ScreenShell'
-import { IconUser, IconCamera, IconMapPin } from './components/icons'
+import { IconUser, IconCamera, IconMapPin, IconChat } from './components/icons'
+import ChatScreen from './components/ChatScreen'
 
 /* Home / Login screen */
 const HomeLogin = ({ onNavigate }) => {
@@ -201,13 +202,15 @@ export default function App() {
       {route === 'profile' && <ProfileScreen onNavigate={navigate} />}
       {route === 'camera' && <CameraScreen onNavigate={navigate} />}
       {route === 'map' && <MapScreen onNavigate={navigate} />}
+      {route === 'chat' && <ChatScreen onNavigate={navigate} />}
 
       {/* Bottom navigation (persistent) */}
       <nav className="fixed bottom-4 left-1/2 transform -translate-x-1/2 w-full max-w-md px-6">
-        <div className="bg-white rounded-xl p-3 shadow-lg flex justify-between">
+        <div className="bg-white rounded-xl p-3 shadow-lg flex items-center justify-between">
           <button onClick={() => navigate('home')} className={`flex-1 py-2 ${route==='home' ? 'text-blue-700 font-semibold' : 'text-gray-500'}`}>Inicio</button>
           <button onClick={() => navigate('report')} className={`flex-1 py-2 ${route==='report' ? 'text-blue-700 font-semibold' : 'text-gray-500'}`}>Reportar</button>
           <button onClick={() => navigate('services')} className={`flex-1 py-2 ${route==='services' ? 'text-blue-700 font-semibold' : 'text-gray-500'}`}>Trámites</button>
+          <button onClick={() => navigate('chat')} className={`flex-1 py-2 ${route==='chat' ? 'text-blue-700 font-semibold' : 'text-gray-500'}`} title="Chat con IA">Chat</button>
           <button onClick={() => navigate('profile')} className={`flex-1 py-2 ${route==='profile' ? 'text-blue-700 font-semibold' : 'text-gray-500'}`}>Perfil</button>
         </div>
       </nav>
