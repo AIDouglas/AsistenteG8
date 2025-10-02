@@ -1,4 +1,4 @@
-# 📱 Asistente Ciudadano (UI Prototype)
+# Asistente Ciudadano (UI Prototype)
 
 Un prototipo de aplicación móvil/web para **gestión ciudadana**, que
 permite: - Reportar incidentes (inseguridad, daños, otros). - Consultar
@@ -12,7 +12,7 @@ persistencia de datos. Todo el flujo está basado en navegación por
 
 ------------------------------------------------------------------------
 
-## 🛠️ Requisitos previos
+## Requisitos previos
 
 -   **Node.js** `>= 18.x`\
 -   **npm** o **pnpm** como gestor de paquetes
@@ -21,7 +21,7 @@ persistencia de datos. Todo el flujo está basado en navegación por
 
 ------------------------------------------------------------------------
 
-## 📂 Estructura de carpetas
+## Estructura de carpetas
 
     asistente-ciudadano/
     ├─ package.json              # Dependencias y scripts
@@ -41,7 +41,7 @@ persistencia de datos. Todo el flujo está basado en navegación por
 
 ------------------------------------------------------------------------
 
-## 🚀 Instalación y ejecución
+## Instalación y ejecución
 
 Clonar el proyecto y entrar en la carpeta:
 
@@ -76,7 +76,7 @@ npm run preview
 
 ------------------------------------------------------------------------
 
-## 🎨 Tecnologías usadas
+## Tecnologías usadas
 
 -   **React 18** -- librería de UI.
 -   **Vite** -- empaquetador rápido para desarrollo.
@@ -87,12 +87,12 @@ npm run preview
 
 ------------------------------------------------------------------------
 
-## 📲 Flujo de la aplicación
+## Flujo de la aplicación
 
 La navegación funciona por **pantallas** controladas con un estado
 `route`. Cada botón cambia la pantalla visible.
 
-### 1. 🏠 Pantalla de Inicio (Login)
+### 1. Pantalla de Inicio (Login)
 
 -   Opciones para ingresar con **cédula** o **correo**.
 -   Botón *Ingresar con cédula* → lleva a **Reportar incidente**.
@@ -100,7 +100,7 @@ La navegación funciona por **pantallas** controladas con un estado
 
 ------------------------------------------------------------------------
 
-### 2. 🚨 Reportar Incidente
+### 2. Reportar Incidente
 
 -   Opciones para clasificar el reporte:
     -   **Reportar incidentes**
@@ -117,7 +117,7 @@ La navegación funciona por **pantallas** controladas con un estado
 
 ------------------------------------------------------------------------
 
-### 3. 📑 Trámites y servicios
+### 3. Trámites y servicios
 
 -   Consultar estado de trámites.
 -   Pagar impuestos.
@@ -127,7 +127,7 @@ La navegación funciona por **pantallas** controladas con un estado
 
 ------------------------------------------------------------------------
 
-### 4. 👤 Perfil ciudadano
+### 4. Perfil ciudadano
 
 -   Datos básicos del ciudadano (nombre, cédula).
 -   Historial de reportes:
@@ -139,21 +139,21 @@ La navegación funciona por **pantallas** controladas con un estado
 
 ------------------------------------------------------------------------
 
-### 5. 📷 Cámara (simulada)
+### 5. Cámara (simulada)
 
 -   Área gris que simula la cámara.
 -   Botón para volver a **Reportar incidente**.
 
 ------------------------------------------------------------------------
 
-### 6. 🗺️ Mapa (simulado)
+### 6. Mapa (simulado)
 
 -   Área gris que simula un mapa.
 -   Botón para volver a **Reportar incidente**.
 
 ------------------------------------------------------------------------
 
-## 🧭 Navegación inferior (Bottom Navigation)
+## Navegación inferior (Bottom Navigation)
 
 Siempre visible en la parte inferior, permite saltar entre pantallas:
 
@@ -166,7 +166,7 @@ El botón activo se marca con color azul y tipografía en negrita.
 
 ------------------------------------------------------------------------
 
-## 📌 Roadmap futuro
+## Roadmap futuro
 
 Este prototipo puede extenderse fácilmente:
 
@@ -179,7 +179,7 @@ Este prototipo puede extenderse fácilmente:
 
 ------------------------------------------------------------------------
 
-## 👨‍💻 Autores
+## Autores
 
 Proyecto creado como prototipo de aplicación ciudadana con React +
 Tailwind.\
