@@ -24,7 +24,7 @@ export default function ChatScreen({ onNavigate }) {
     const userMsg = { id: Date.now(), from: 'user', text }
     setMessages(prev => [...prev, userMsg])
     setInput('')
-    // Placeholder: Simula respuesta del bot (aquí integrarás IA)
+    // Placeholder: Simula respuesta del bot
     setTimeout(() => {
       const botReply = {
         id: Date.now() + 1,
