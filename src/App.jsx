@@ -36,51 +36,70 @@ const HomeLogin = ({ onNavigate }) => {
 const ReportScreen = ({ onNavigate }) => {
   return (
     <ScreenShell title="Reportar incidente">
+      {/* Categorías de incidentes */}
       <div className="grid grid-cols-2 gap-2 sm:gap-3">
-        <div className="bg-white p-3 sm:p-4 rounded-xl shadow-sm flex flex-col items-center gap-2 hover:bg-gray-50 active:bg-gray-100 transition-colors cursor-pointer">
-          <div className="bg-blue-50 p-2 sm:p-3 rounded-full">
-            <svg className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" viewBox="0 0 24 24" fill="none"><path d="M4 12h16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
+        <div className="bg-white p-4 sm:p-5 rounded-xl shadow-sm flex flex-col items-center gap-2 hover:bg-gray-50 active:bg-gray-100 transition-colors cursor-pointer">
+          <div className="bg-blue-50 p-3 rounded-full">
+            <svg className="w-6 h-6 sm:w-7 sm:h-7 text-blue-600" viewBox="0 0 24 24" fill="none"><path d="M4 12h16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
           </div>
-          <div className="text-xs sm:text-sm text-center">Reportar incidentes</div>
+          <div className="text-sm sm:text-base text-center font-medium">Vías</div>
         </div>
 
-        <div className="bg-white p-3 sm:p-4 rounded-xl shadow-sm flex flex-col items-center gap-2 hover:bg-gray-50 active:bg-gray-100 transition-colors cursor-pointer">
-          <div className="bg-blue-50 p-2 sm:p-3 rounded-full">
-            <svg className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" viewBox="0 0 24 24" fill="none"><path d="M3 7h18v12H3z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
+        <div className="bg-white p-4 sm:p-5 rounded-xl shadow-sm flex flex-col items-center gap-2 hover:bg-gray-50 active:bg-gray-100 transition-colors cursor-pointer">
+          <div className="bg-blue-50 p-3 rounded-full">
+            <svg className="w-6 h-6 sm:w-7 sm:h-7 text-blue-600" viewBox="0 0 24 24" fill="none"><path d="M3 7h18v12H3z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
           </div>
-          <div className="text-xs sm:text-sm text-center">Trámites y servicios</div>
+          <div className="text-sm sm:text-base text-center font-medium">Servicios</div>
         </div>
 
-        <div className="bg-white p-3 sm:p-4 rounded-xl shadow-sm flex flex-col items-center gap-2 hover:bg-gray-50 active:bg-gray-100 transition-colors cursor-pointer">
-          <div className="bg-blue-50 p-2 sm:p-3 rounded-full">
-            <svg className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" viewBox="0 0 24 24" fill="none"><path d="M12 2v6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
+        <div className="bg-white p-4 sm:p-5 rounded-xl shadow-sm flex flex-col items-center gap-2 hover:bg-gray-50 active:bg-gray-100 transition-colors cursor-pointer">
+          <div className="bg-blue-50 p-3 rounded-full">
+            <svg className="w-6 h-6 sm:w-7 sm:h-7 text-blue-600" viewBox="0 0 24 24" fill="none"><path d="M12 2v6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
           </div>
-          <div className="text-xs sm:text-sm text-center">Inseguridad</div>
+          <div className="text-sm sm:text-base text-center font-medium">Inseguridad</div>
         </div>
 
-        <div className="bg-white p-3 sm:p-4 rounded-xl shadow-sm flex flex-col items-center gap-2 hover:bg-gray-50 active:bg-gray-100 transition-colors cursor-pointer">
-          <div className="bg-blue-50 p-2 sm:p-3 rounded-full">
-            <svg className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2" stroke="currentColor" strokeWidth="1.5"/></svg>
+        <div className="bg-white p-4 sm:p-5 rounded-xl shadow-sm flex flex-col items-center gap-2 hover:bg-gray-50 active:bg-gray-100 transition-colors cursor-pointer">
+          <div className="bg-blue-50 p-3 rounded-full">
+            <svg className="w-6 h-6 sm:w-7 sm:h-7 text-blue-600" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2" stroke="currentColor" strokeWidth="1.5"/></svg>
           </div>
-          <div className="text-xs sm:text-sm text-center">Otro</div>
+          <div className="text-sm sm:text-base text-center font-medium">Otro</div>
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-2 sm:gap-3 mt-2">
-        <button onClick={() => onNavigate('camera')} className="col-span-1 bg-blue-50 p-3 rounded-xl flex items-center gap-2 sm:gap-3 hover:bg-blue-100 active:bg-blue-200 transition-colors">
-          <IconCamera className="flex-shrink-0" />
-          <span className="text-xs sm:text-sm">Tomar foto</span>
-        </button>
-        <button onClick={() => onNavigate('map')} className="col-span-1 bg-blue-50 p-3 rounded-xl flex items-center gap-2 sm:gap-3 hover:bg-blue-100 active:bg-blue-200 transition-colors">
-          <IconMapPin className="flex-shrink-0" />
-          <span className="text-xs sm:text-sm">Ubicación</span>
-        </button>
-      </div>
-
+      {/* Sección de adjuntos */}
       <div className="mt-4">
-        <button className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 active:bg-blue-800 transition-colors">Enviar reporte</button>
+        <h3 className="text-sm font-semibold text-gray-700 mb-2">Adjuntar evidencia</h3>
+        <div className="grid grid-cols-2 gap-2 sm:gap-3">
+          <button onClick={() => onNavigate('camera')} className="bg-blue-50 p-4 rounded-xl flex flex-col items-center gap-2 hover:bg-blue-100 active:bg-blue-200 transition-colors">
+            <IconCamera className="w-8 h-8 sm:w-10 sm:h-10 text-blue-600" />
+            <span className="text-sm sm:text-base font-medium text-blue-900">Tomar foto</span>
+          </button>
+          <button onClick={() => onNavigate('map')} className="bg-blue-50 p-4 rounded-xl flex flex-col items-center gap-2 hover:bg-blue-100 active:bg-blue-200 transition-colors">
+            <IconMapPin className="w-8 h-8 sm:w-10 sm:h-10 text-blue-600" />
+            <span className="text-sm sm:text-base font-medium text-blue-900">Ubicación</span>
+          </button>
+        </div>
       </div>
 
+      {/* Área de descripción */}
+      <div className="mt-4">
+        <label className="text-sm font-semibold text-gray-700 mb-2 block">Descripción (opcional)</label>
+        <textarea 
+          placeholder="Describe el incidente..."
+          className="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-200 resize-none"
+          rows="3"
+        ></textarea>
+      </div>
+
+      {/* Botón de enviar */}
+      <div className="mt-4">
+        <button className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 active:bg-blue-800 transition-colors shadow-sm">
+          Enviar reporte
+        </button>
+      </div>
+
+      {/* Navegación */}
       <div className="mt-4 flex justify-between">
         <button onClick={() => onNavigate('home')} className="text-xs sm:text-sm text-blue-700 hover:text-blue-800">← Volver</button>
         <button onClick={() => onNavigate('services')} className="text-xs sm:text-sm text-blue-700 font-medium hover:text-blue-800">Trámites →</button>
