@@ -12,3 +12,48 @@ h1, h2, h3 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* Ocultar scrollbar en elementos con scrollbar-hide */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Animaciones para los puntos de carga */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+/* Mejoras para prose (markdown) */
+.prose {
+  color: inherit;
+}
+
+.prose strong {
+  color: inherit;
+  font-weight: 700;
+}
+
+/* Responsive text wrapping */
+@media (max-width: 640px) {
+  .prose {
+    font-size: 0.875rem;
+  }
+}
